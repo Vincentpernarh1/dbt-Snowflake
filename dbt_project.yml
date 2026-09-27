@@ -2,7 +2,7 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 
-name: 'dbt-fundamentals'
+name: 'dbt-Snowflake'
 version: '1.0.0'
 config-version: 2
 
@@ -36,8 +36,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  dbt-fundamentals':
-    staging:
+  dbt-Snowflake:
+    Staging:
       +materialized: view
 
     marts:
