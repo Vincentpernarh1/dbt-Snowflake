@@ -15,7 +15,7 @@ renamed as (
         status as order_status,
         _etl_loaded_at
 
-    from source
+    from source 
 
 )
 
