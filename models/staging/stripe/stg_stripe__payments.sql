@@ -1,6 +1,15 @@
--- select  * from raw.stripe.payment
-with  renamed as (
-    select 
+with 
+
+source as (
+
+    select * from {{ source('stripe', 'payment') }}
+
+),
+
+renamed as (
+
+    select
+
     id as payment_id,
     order_id,
     payment_method,
@@ -9,7 +18,8 @@ with  renamed as (
     status as payment_status,
     _etl_loaded_at as _batched_at
 
-    from  raw.stripe.payment
+    from source
+
 )
 
 select * from renamed
