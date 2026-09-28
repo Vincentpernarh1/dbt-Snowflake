@@ -14,13 +14,12 @@ sources:
             data_tests:
               - unique
               - not_null
-              
+
       - name: orders
         description: Table that represents our raw order data.
         columns:
-          - name: id 
+          - name: id
             description: primary key for hte order data
             data_tests:
               - unique
               - not_null
-              

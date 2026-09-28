@@ -2,6 +2,16 @@ version: 2
 
 sources:
   - name: stripe
+    description: Table with payment informatins of orders
     database: raw
+    schema: stripe
     tables:
       - name: payment
+        description: table name that contains all the payments made for oders per order id
+        data_tests:
+        columns:
+          - name: id
+            description: unique primary id o thetbale to merge with other table.
+              - unique
+              - not_null
+            
