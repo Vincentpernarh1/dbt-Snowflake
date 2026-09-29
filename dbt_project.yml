@@ -35,7 +35,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  dbtS-nowflake:
+  dbt-Snowflake:
     # Applies to all files under models/example/
     staging:
       +materialized: table
